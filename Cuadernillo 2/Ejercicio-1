@@ -1,0 +1,15 @@
+from calendar import leapdays
+
+
+y1 = int(input("Dime un año: "))
+y2 = int(input("Dime otro año: "))
+
+while y1 > y2:
+    print("El primer año no puede ser menor al segundo")
+    y1 = int(input("Dime un año: "))
+    y2 = int(input("Dime otro año: "))
+
+
+print(f"entre {y1} y {y2} hay {leapdays(y1,y2)} años bisiestos")
+
+
